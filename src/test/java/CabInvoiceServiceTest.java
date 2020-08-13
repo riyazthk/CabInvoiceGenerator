@@ -21,14 +21,6 @@ public class CabInvoiceServiceTest {
 
     }
 
-//    @Test
-//    public void givenKilometerAndMin_ShouldReturnCalculateFares() {
-//        this.setup();
-//        double fare = cabInvoiceService.calculateFare(3, 4);
-//        Assert.assertEquals(34, fare, 0.0);
-//
-//    }
-
     @Test
     public void givenKilometerAndMinWithMultipleRideShouldReturnTotalFares() {
         Ride[] rides = {new Ride(CabRide.NORMAL,2.0, 5),
